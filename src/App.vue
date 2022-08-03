@@ -2,32 +2,57 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
-      <hero />
-      
+      <home />
+      <about />
+      <download />
+     
+      <contact />
     </v-main>
-    
-    
+    <v-scale-transition>
+      <v-btn
+        fab
+        v-show="fab"
+        v-scroll="onScroll"
+        dark
+        fixed
+        bottom
+        right
+        color="secondary"
+        @click="toTop"
+      >
+        <v-icon>mdi-arrow-up</v-icon>
+      </v-btn>
+    </v-scale-transition>
+    <foote />
   </v-app>
 </template>
 
 <style scoped>
 .v-main {
- background:#eaeaea;
+
+
+ 
 }
 </style>
 
 <script>
 import navigation from "./components/Navigation";
-import hero from "./components/HeroSection";
-
+import foote from "./components/Footer";
+import home from "./components/HomeSection";
+import about from "./components/AboutSection";
+import download from "./components/DownloadSection";
+import contact from "./components/ContactSection";
 
 export default {
   name: "App",
 
   components: {
     navigation,
-    hero,
-    
+    foote,
+    home,
+    about,
+    download,
+    contact,
   },
 
   data: () => ({

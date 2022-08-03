@@ -47,8 +47,8 @@
       class="px-15 background-nav"
       :class="{ expand: flat }"
     >
-      <v-toolbar-title>
-        <v-img src="@/assets/img/logo.jpg" max-width="50px" />
+      <v-toolbar-title class="" style="color:orange; font-size:40px;font-family:comic-sans">
+        Leapsail
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
