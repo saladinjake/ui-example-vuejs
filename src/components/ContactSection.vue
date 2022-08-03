@@ -6,37 +6,53 @@
           <v-row justify="center">
             <v-col cols="12" sm="6">
               
-              <v-row>
-                <v-col cols="12" class="d-flex align-center">
+              <v-row class="d-flex align-center">
+                <div>
+                <v-col cols="12" class="d-flex align-center" >
+                  <div>
                   <v-img
                     src="@/assets/img/icon1.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    step 1
-                  </p>
+                  <h4 class="text-justify">
+                    Quick response chat
+                  </h4>
+                  </div>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
+                  <div>
                   <v-img
                     src="@/assets/img/icon2.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    step 2
-                  </p>
+                  <h4 class="text-justify">
+                    Live chat
+                  </h4>
+                  </div>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
+                <div>
                   <v-img
                     src="@/assets/img/icon3.svg"
                     max-width="60px"
                     class="mr-4"
                   />
-                  <p class="text-justify">
-                    step 3
-                  </p>
+                  <h4 class="text-justify">
+                   Daily webinars
+                  </h4>
+                  </div>
                 </v-col>
+                </div>
+
+                <div>
+                     <v-img
+                    src="@/assets/img/hero.jpg"
+                    max-width="280px"
+                    class="mr-4 avatar"
+                  />
+                </div>
               </v-row>
 
             </v-col>
@@ -58,6 +74,11 @@
 <style scoped>
 #contact {
   background-color: #f4f7f5;
+}
+
+.avatar{
+  border-radius:50%;
+  margin-left:10px;
 }
 
 .svg-border-waves .v-image {
