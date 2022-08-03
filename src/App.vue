@@ -2,7 +2,10 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
+      <hero />
+      
     </v-main>
+    
     
   </v-app>
 </template>
@@ -15,6 +18,7 @@
 
 <script>
 import navigation from "./components/Navigation";
+import hero from "./components/HeroSection";
 
 
 export default {
@@ -22,12 +26,8 @@ export default {
 
   components: {
     navigation,
-    foote,
-    home,
-    about,
-    download,
-    pricing,
-    contact,
+    hero,
+    
   },
 
   data: () => ({
