@@ -4,7 +4,7 @@
     <v-main class="pt-0">
       <home />
       <about />
-      <download />
+      <info />
      
       <contact />
     </v-main>
@@ -23,7 +23,7 @@
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </v-scale-transition>
-    <foote />
+    <foot />
   </v-app>
 </template>
 
@@ -37,10 +37,10 @@
 
 <script>
 import navigation from "./components/Navigation";
-import foote from "./components/Footer";
+import foot from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
-import download from "./components/DownloadSection";
+import info from "./components/InfoSection";
 import contact from "./components/ContactSection";
 
 export default {
@@ -48,10 +48,10 @@ export default {
 
   components: {
     navigation,
-    foote,
+    foot,
     home,
     about,
-    download,
+    info,
     contact,
   },
 

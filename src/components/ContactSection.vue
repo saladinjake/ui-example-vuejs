@@ -56,7 +56,7 @@
               </v-row>
 
             </v-col>
-            <v-col cols="12" sm="6">
+            <v-col cols="12" sm="6" style="margin-top:30px">
               <h1 class="font-weight-light display-1">24/7 Customer Support</h1>
               <h3 class="font-weight-light mt-3">
                 Our team is here to give you personalized support with

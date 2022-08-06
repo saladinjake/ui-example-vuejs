@@ -202,6 +202,7 @@
   margin:10px;
   padding:10px;
   width:300px;
+  color:#000;
 }
 
 
@@ -284,7 +285,7 @@ a {
 }
 .footer-call-to-action-button:hover {
     background-color: #000;
-    color: #00bef0;
+    
 }
 .button:last-of-type {
     margin-right: 0;
@@ -292,7 +293,7 @@ a {
 .footer-call-to-action-button {
     background-color: #027b9a;
     border-radius: 21px;
-    color: #fffff2;
+   
     display: inline-block;
     font-size: 11px;
     font-weight: 900;
@@ -310,7 +311,7 @@ a {
     margin-top: 30px;
 }
 .footer-call-to-action-title {
-    color: #fffff2;
+   
     font-size: 14px;
     font-weight: 900;
     letter-spacing: .1em;

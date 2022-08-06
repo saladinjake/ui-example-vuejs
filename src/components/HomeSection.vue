@@ -1,6 +1,6 @@
 <template>
   <section id="hero">
-    <v-parallax dark  height="750">
+    <v-parallax   height="700">
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
@@ -18,7 +18,7 @@
                 class="mt-5 orange"
               >
                 Get started
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                
               </v-btn>
               <div class="video d-flex align-center py-4" >
                                 
@@ -31,9 +31,9 @@
                 @click="$vuetify.goTo('#features')"
                 class="mt-5 black"
               >
-              
+              <v-icon class="ml-2">mdi-arrow-down</v-icon>
                 App store
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                
               </v-btn>
 
 
@@ -46,9 +46,9 @@
                 class="mt-5 black"
                 style="margin-left:10px"
               >
-              
-                App store
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              <v-icon class="ml-2">mdi-arrow-down</v-icon>
+                Google Play
+                
               </v-btn>
 
               </div>
@@ -62,6 +62,14 @@
                      <img src="@/assets/img/icon2.png" />
                    </div>
                     <div class="box box3">
+                      <img src="@/assets/img/icon2.png" />
+                    </div>
+
+                    <div class="box box4">
+                      <img src="@/assets/img/icon2.png" />
+                    </div>
+
+                    <div class="box box5">
                       <img src="@/assets/img/icon2.png" />
                     </div>
             </v-col>
@@ -94,9 +102,9 @@
                  <v-img
                    
                     max-width="100px"
-                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'50px', width:'50px' }"
+                    v-bind:class="getRandomColor()" style="width: 100px; height: 50px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'30px', width:'30px' }"
                      class="img"
-                  ></v-img>
+                  ><i ></i></v-img>
                   <h1 class="font-weight-regular d-block">{{ feature.title }}</h1>
                   
                 </div>
@@ -124,9 +132,9 @@
                    <v-img
                     
                     max-width="100px"
-                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'50px', width:'50px' }"
+                    v-bind:class="getRandomColor()" style="width: 100px; height: 50px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'30px', width:'30px' }"
                      class="img"
-                  ></v-img>
+                  ><i ></i></v-img>
                   <h1 class="font-weight-regular d-block">{{ feature.title }}</h1>
                   
                 </div>
@@ -153,9 +161,9 @@
                  <v-img
                     
                     max-width="100px"
-                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'50px', width:'50px' }"
+                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'30px', width:'30px' }"
                      class="img"
-                  ></v-img>
+                  ><i ></i></v-img>
                   <h1 class="font-weight-regular d-block">{{ feature.title }}</h1>
                   
                 </div>
@@ -167,30 +175,28 @@
 
 
 
-         <v-row align="center" justify="space-around">
+         <v-row align="center" justify="space-around"   >
          
 
             <v-col
               cols="12"
               sm="2"
+
              
               v-for="(feature, i) in featuresFour"
               :key="i"
             >
              
                 <div
-                  class="badge"
-                  
-                  
-                >
+                  class="badge">
                   
 
                    <v-img
                     
                     max-width="100px"
-                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'50px', width:'50px' }"
+                    v-bind:class="getRandomColor()" style="width: 200px; height: 100px;" v-bind:style="{  'padding':'10px', 'border-radius':'50%','margin-right':'5px', height:'30px', width:'30px' }"
                     class="img"
-                  ></v-img>
+                  ><i ></i></v-img>
 
 
                   <h1 class="font-weight-regular ">{{ feature.title }}</h1>
@@ -204,7 +210,7 @@
 
 
         <v-row align="center" justify="space-around">
-           <v-col cols="12" class="text-center">
+           <v-col cols="12" class="text-center" style="margin-left:10px; margin-right:10px">
            
          <v-btn
                 rounded
@@ -396,11 +402,14 @@ export default {
         }
  .box{
    transform: rotate(46deg);
+   padding-bottom:15px;
 }
 
 .box img{
    transform: rotate(16deg);
    width:100%;
+   padding-bottom:15px;
+
 }
 .box1, .box2, .box3, .box4, .box5{
   position:absolute;
@@ -423,13 +432,17 @@ export default {
 
 
 .box4{
-  right:390px;
-  top:280px
+  right:370px;
+  top:480px;
+  width:100px;
+  height:100px;
 }
 
 .box5{
-  right:390px;
-  top:280px
+  right:130px;
+  top:450px;
+  width:100px;
+  height:100px;
 }
 
 .btn-play {
@@ -478,10 +491,11 @@ export default {
   border-radius: 3rem;
   text-align: center;
   font-size: 13px;
-  font-weight: 100;
-  padding: 10px;
+ 
+  padding: 0px;
   line-height: inherit;
-  width:200px;
+  min-width:210px;
+  margin:10px;
  
 }
 
@@ -500,6 +514,8 @@ export default {
 
 .badge h1 {
   float:right;
+  margin-right:10px;
+  padding:5px;
 }
 
 .badge--line {
@@ -546,4 +562,19 @@ section {
   background-size: cover;
   background-position: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
