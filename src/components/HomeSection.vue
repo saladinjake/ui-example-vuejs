@@ -5,7 +5,7 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4 black-text">We are revolutionizing your concept of confort</h1>
+              <h1 class="display-2 font-weight-bold mb-4 black-text">We are revolutionizing your concept of comfort</h1>
               <h1 class="font-weight-light black-text">
                 created with a can do and achievers mindset. A self on-bording application with features that open you at a new day
               </h1>
